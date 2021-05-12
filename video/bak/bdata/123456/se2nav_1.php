@@ -1,0 +1,31 @@
+<?php
+require("../../inc/header.php");
+
+/*
+		SoftName : EmpireBak Version 2010
+		Author   : wm_chief
+		Copyright: Powered by www.phome.net
+*/
+
+DoSetDbChar('gbk');
+E_D("DROP TABLE IF EXISTS `se2nav`;");
+E_C("CREATE TABLE `se2nav` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `mor` int(2) unsigned NOT NULL DEFAULT '0',
+  `name` varchar(1000) NOT NULL,
+  `url` varchar(1000) NOT NULL,
+  `sort` int(8) unsigned NOT NULL DEFAULT '0',
+  `member` int(2) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=50 DEFAULT CHARSET=gbk");
+E_D("replace into `se2nav` values('29','0','ÃÀÅ®','vod_list.php?flid=2','1','0');");
+E_D("replace into `se2nav` values('30','0','Ð´Õæ','vod_list.php?flid=13','2','0');");
+E_D("replace into `se2nav` values('31','0','½ÖÅÄ','vod_list.php?flid=12','3','0');");
+E_D("replace into `se2nav` values('32','0','ÈÈÎè','vod_list.php?flid=4','4','0');");
+E_D("replace into `se2nav` values('33','0','·¹ÅÄ','vod_list.php?flid=14','5','0');");
+E_D("replace into `se2nav` values('35','0','¸£Àû','vod_list.php?flid=10','6','0');");
+E_D("replace into `se2nav` values('46','1','Ö÷²¥','vod_list.php?flid=3','8','0');");
+E_D("replace into `se2nav` values('48','0','Î¢ÅÄ','vod_list.php?flid=1','7','0');");
+
+require("../../inc/footer.php");
+?>

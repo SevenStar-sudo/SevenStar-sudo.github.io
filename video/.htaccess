@@ -1,8 +1,0 @@
-
-
-# php -- BEGIN cPanel-generated handler, do not edit
-# 将“ea-php53” 资源包设置为默认“PHP” 编程语言。
-<IfModule mime_module>
-  AddType application/x-httpd-ea-php53 .php .php5 .phtml
-</IfModule>
-# php -- END cPanel-generated handler, do not edit
